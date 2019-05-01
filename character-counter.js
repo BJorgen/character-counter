@@ -1,12 +1,12 @@
 function countLetters(text) {
   text = text.toLowerCase().split(" ").join("");
-  letterCounts = {};
+  var letterCounts = {};
 
   for (var i = 0; i < text.length; i++) {
-    currentLetter = text[i];
+    var currentLetter = text[i];
     if (letterCounts[currentLetter]) {
       letterCounts[currentLetter]++;
-    } else {letterCounts[currentLetter] = 1}
+    } else {letterCounts[currentLetter] = 1;}
   }
 
   return letterCounts;
